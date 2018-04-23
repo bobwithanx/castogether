@@ -1,6 +1,6 @@
 languageCode = "en-us"
 title = "CASTogether"
-baseURL = ""
+baseURL = "http://dev.castogether.com"
 theme = "hugo-theme-dopetrope"
 publishDir = "docs"
 

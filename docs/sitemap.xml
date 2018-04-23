@@ -3,42 +3,42 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/events/cast1/</loc>
+    <loc>http://dev.castogether.com/events/cast1/</loc>
   </url>
   
   <url>
-    <loc>/events/cast2/</loc>
+    <loc>http://dev.castogether.com/events/cast2/</loc>
   </url>
   
   <url>
-    <loc>/events/cast3/</loc>
+    <loc>http://dev.castogether.com/events/cast3/</loc>
   </url>
   
   <url>
-    <loc>/events/cast4/</loc>
+    <loc>http://dev.castogether.com/events/cast4/</loc>
   </url>
   
   <url>
-    <loc>/events/cast5/</loc>
+    <loc>http://dev.castogether.com/events/cast5/</loc>
   </url>
   
   <url>
-    <loc>/</loc>
+    <loc>http://dev.castogether.com/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/categories/</loc>
+    <loc>http://dev.castogether.com/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/events/</loc>
+    <loc>http://dev.castogether.com/events/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/</loc>
+    <loc>http://dev.castogether.com/tags/</loc>
     <priority>0</priority>
   </url>
   
