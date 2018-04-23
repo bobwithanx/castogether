@@ -1,0 +1,22 @@
+<!-- Content -->
+<article class="box event">
+  <header>
+    <h2>{{ .Title }}</h2>
+    <p>
+      {{ if .Params.eventdate }} {{ .Params.eventdate }} {{ end }} {{ if .Params.location }} @ {{ .Params.location }} {{ end }}
+    </p>
+  </header>
+  {{ .Content }} {{ if .Params.presenters }}
+  <div id="presenters">
+    <header>
+      <h3>Presenters</h3>
+    </header>
+    <ul>
+      {{ range .Params.presenters }}
+      <li>{{ . }}</li>
+      {{ end }}
+    </ul>
+  </div>
+</article>
+
+{{ end }}

@@ -1,0 +1,18 @@
+languageCode = "en-us"
+title = "CASTogether"
+baseURL = ""
+theme = "hugo-theme-dopetrope"
+
+[params.event]
+    title = "Events"
+    foldername = "events"
+    findoutmoretext = "Find out more"
+
+[[menu.main]]
+    name = "Events"
+    weight = 200
+    url = "/#events"
+[[menu.main]]
+    name = "About CAST"
+    weight = 100
+    url = "/"

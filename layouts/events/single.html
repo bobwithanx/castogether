@@ -1,0 +1,31 @@
+{{ define "main" }}
+<div id="page-wrapper">
+
+  <!-- Header -->
+  <div id="header-wrapper">
+    <div id="header">
+
+      {{ partial "logo.html" . }} {{ partial "nav.html" . }}
+
+    </div>
+  </div>
+
+  <!-- Main -->
+  <div id="main-wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="8u 12u(mobile)">
+          {{ partial "event/content.html" . }}
+        </div>
+        <div class="4u 12u(mobile)">
+          {{ partial "event/sidebar" . }}
+        </div>
+    </div>
+  </div>
+</div>
+
+  {{ partial "footer/index.html" . }}
+
+</div>
+
+{{ partial "scripts/index.html" . }} {{ end }}

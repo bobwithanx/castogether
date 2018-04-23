@@ -1,0 +1,17 @@
+{{ if .Params.image }}
+<section class="image">
+  <img src="{{ .Params.image }}">
+</section>
+{{ end }} {{ if .Params.audio }}
+<section class="box">
+  <header>
+    <h3>Audio Recording</h3>
+  </header>
+  <audio controls>
+    <source src="{{ .Params.audio }}" type="audio/mpeg">
+    <a href="{{ .Params.audio }}">
+      Download {{ .Params.audio }}
+    </a>
+  </audio>
+</section>
+{{ end }}

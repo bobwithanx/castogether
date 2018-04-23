@@ -1,0 +1,26 @@
+<!-- Portfolio -->
+<section id="events">
+  <header class="major">
+    <h2>{{ .Site.Params.Event.title }}</h2>
+  </header>
+  <div class="row" id="flex">
+    {{ range where .Data.Pages.Reverse "Type" .Site.Params.Event.foldername }}
+    <div class="4u 6u(tablet) 12u(mobile)">
+      <section class="box">
+        <a href="{{ .Permalink }}" class="image featured">
+          <img src="{{ .Permalink }}/{{ .Params.thumbnail }}" alt="" />
+        </a>
+        <header>
+          <h3>{{ .Title }}</h3>
+        </header>
+        <p>{{ .Summary }}</p>
+        <footer>
+          <a class="more" href="{{ .Permalink }}">Read more
+            <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
+          </a>
+        </footer>
+      </section>
+    </div>
+    {{ end }}
+  </div>
+</section>

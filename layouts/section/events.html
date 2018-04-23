@@ -1,0 +1,45 @@
+{{ define "main" }}
+<div id="page-wrapper">
+
+  <!-- Header -->
+  <div id="header-wrapper">
+    <div id="header">
+
+      {{ partial "logo.html" . }} {{ partial "nav.html" . }}
+
+    </div>
+  </div>
+
+  <!-- Main -->
+  <div id="main-wrapper">
+    <div class="container">
+      {{ $eventItems := where .Site.Pages "Type" .Site.Params.Event.foldername }} {{ if $eventItems }}
+      <div class="row">
+        <div class="12u">
+          <div class="row">
+            {{ range where .Data.Pages.Reverse "Type" .Site.Params.Event.foldername }}
+            <div class="4u 12u(mobile)">
+              <section class="box">
+                <header>
+                  <h3>{{ .Title }}</h3>
+                </header>
+                <p>{{ .Description }}
+                  <a href="{{ .Permalink }}">read more...</a>
+                </p>
+              </section>
+            </div>
+            {{ end }}
+          </div>
+          </section>
+        </div>
+      </div>
+      {{ end }}
+
+    </div>
+  </div>
+
+  {{ partial "footer/index.html" . }}
+
+</div>
+
+{{ partial "scripts/index.html" . }} {{ end }}
