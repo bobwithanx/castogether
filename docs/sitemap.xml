@@ -3,6 +3,10 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://dev.castogether.com/about/</loc>
+  </url>
+  
+  <url>
     <loc>http://dev.castogether.com/events/cast1/</loc>
   </url>
   

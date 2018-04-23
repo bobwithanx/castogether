@@ -10,10 +10,14 @@ publishDir = "docs"
     findoutmoretext = "Find out more"
 
 [[menu.main]]
-    name = "Events"
+    name = "Past Events"
     weight = 200
-    url = "/#events"
+    url = "/events"
 [[menu.main]]
     name = "About CAST"
     weight = 100
-    url = "/"
+    url = "/about"
+[[menu.main]]
+    name = "CAST #5"
+    weight = 150
+    url = "/events/cast5"

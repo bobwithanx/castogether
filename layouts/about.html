@@ -1,0 +1,32 @@
+{{ define "main" }}
+	<div id="page-wrapper">
+
+		<!-- Header -->
+			<div id="header-wrapper">
+				<div id="header">
+
+					{{ partial "logo.html" . }}
+
+					{{ partial "nav.html" . }}
+
+					{{ partial "banner.html" . }}
+
+					<!-- {{ partial "intro.html" . }} -->
+
+				</div>
+			</div>
+
+		<!-- Main -->
+			<div id="main-wrapper">
+				<div class="container">
+					<h1>About CAST</h1>
+				</div>
+			</div>
+
+			{{ partial "footer/index.html" . }}
+
+	</div>
+
+	{{ partial "scripts/index.html" . }}
+
+{{ end }}
