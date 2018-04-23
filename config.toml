@@ -2,6 +2,7 @@ languageCode = "en-us"
 title = "CASTogether"
 baseURL = ""
 theme = "hugo-theme-dopetrope"
+publishDir = "docs"
 
 [params.event]
     title = "Events"
