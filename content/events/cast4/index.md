@@ -13,4 +13,6 @@ draft = false
 
 The theme of CAST #4 was Women. We examined it from the personal level of women’s identities, the community level of women in society, and the Church level of women in ministry.
 
+<!--more-->
+
 A portion of ticket proceeds was donated to [Changing Lives Center](https://phoenixrescuemission.org/solutions/changing-lives-center/).

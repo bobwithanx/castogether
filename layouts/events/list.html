@@ -1,54 +1,60 @@
 {{ define "main" }}
-	<div id="page-wrapper">
+<div id="page-wrapper">
 
-		<!-- Header -->
-			<div id="header-wrapper">
-				<div id="header">
+  <!-- Header -->
+  <div id="header-wrapper">
+    <div id="header">
 
-					{{ partial "logo.html" . }}
+      {{ partial "logo.html" . }} {{ partial "nav.html" . }}
 
-					{{ partial "nav.html" . }}
+      <!-- {{ partial "intro.html" . }} -->
 
-					<!-- {{ partial "intro.html" . }} -->
+    </div>
+  </div>
 
-				</div>
-			</div>
+  <!-- Main -->
+  <div id="main-wrapper">
+    <div class="container">
+      {{ $eventItems := where .Site.Pages "File.Dir" "in" .Site.Params.Event.foldername }} {{ if $eventItems }}
+      <section id="events">
+        <header class="major">
+          <h2>{{ .Site.Params.Event.title }}</h2>
+        </header>
+        <div class="columns is-multiline">
+          {{ range where .Data.Pages.Reverse "Type" .Site.Params.Event.foldername }}
+          <div class="tile is-parent is-4">
+            <div class="tile is-child card">
+              <div class="card-image">
+                <a href="{{ .Permalink }}" class="image ">
+                  <figure class="image">
+                    <img src="{{ .Permalink }}{{ .Params.thumbnail }}" alt="" />
+                  </figure>
+                </a>
+              </div>
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-content">
+                    <p class="title is-4">{{ .Title }}</p>
+                  </div>
+                </div>
+                <div class="content">
+                  {{ .Summary }}
+                  <a class="more" href="{{ .Permalink }}">Read more
+                    <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          {{ end }}
+        </div>
+      </section>
+      {{ end }}
+    </div>
+  </div>
 
-		<!-- Main -->
-			<div id="main-wrapper">
-				<div class="container">
+  {{ partial "footer/index.html" . }}
 
-          {{ $eventItems := where .Site.Pages "File.Dir" "in" .Site.Params.Event.foldername }}
-          {{ if $eventItems }}
-					<div class="row">
-						<div class="12u">
-							{{ partial "event.html" . }}
-						</div>
-					</div>
-					{{ end }}
-					{{ $blogPaginator := .Paginate (where .Data.Pages "Type" .Site.Params.Blog.foldername) 2 }}
-					{{ if $blogPaginator.TotalNumberOfElements }}
-					<div class="row">
-						<div class="12u">
-							{{ partial "blog.html" (dict "title" .Site.Params.Blog.title "paginator" $blogPaginator) }}
-						</div>
-					</div>
-					<footer>
-						<ul class="actions" style="text-align: center">
-							<li><a href="{{ .Site.Params.Blog.foldername }}" class="button big">{{ .Site.Params.Blog.viewalltext }}</a></li>
-						</ul>
-					</footer>
-					{{ end }}
-				</div>
-			</div>
+</div>
 
-			{{ partial "footer/index.html" . }}
-
-	</div>
-
-	{{ partial "scripts/index.html" . }}
-	{{ if .Site.Params.Settings.disqus }}
-	<script id="dsq-count-scr" src="//{{ .Site.Params.Settings.disqus }}.disqus.com/count.js" async></script>
-	{{ end }}
-
-{{ end }}
+{{ partial "scripts/index.html" . }} {{ end }}
