@@ -6,6 +6,25 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+ul.social li a.fa-envelope,
+ul.social li a.fa-envelope-o {
+    background: #679742;
+}
+
+ul.social li a.fa-envelope:hover,
+ul.social li a.fa-envelope-o:hover {
+    background: #77a952;
+}
+
+
+ul.social li a.fa-instagram {
+  background: radial-gradient(circle farthest-corner at 35% 90%, #F3BC5E, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #F3BC5E, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+}
+
+ul.social li a.fa-instagram:hover {
+  background: radial-gradient(circle farthest-corner at 35% 90%, #FFCA70, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #FFCA70, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #656BE1, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #656BE1, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #8542B8, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #8542B8, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #EB418B, transparent), linear-gradient(#776BDC, #CF40A2 30%, #F55172 50%, #FF8247 70%, #FFCC7A 100%);
+}
+
 nav {
   margin: 1em 0 !important;
 }
