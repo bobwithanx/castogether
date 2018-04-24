@@ -1,4 +1,8 @@
-{{ if .Params.image }}
+ {{ if .Params.tickets }}
+<section id="intro">
+  <a href="{{ .Params.tickets }}" class="button big">Buy Tickets</a>
+</section>
+{{ end }} {{ if .Params.image }}
 <section class="image">
   <img src="{{ .Params.image }}">
 </section>

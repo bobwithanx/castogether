@@ -9,5 +9,7 @@ author = "Jessica S. Marquis"
 draft = false
 +++
 How does busyness hinder relationships? Who does being busy well? Why is it so pervasive? What can be done to leverage it for God’s purposes? When must we go against culture and label it an idol? These are some of the conversations and concepts we explored together at this two-hour event for women who want to come alive in Christ.
+
 <!--more-->
+
 On April 23, 2016, multiple presenters got to speak, sing, and perform on this theme, then engaged with us in immersive settings to discuss and scheme further to carry out God’s work. A portion of proceeds was donated to [Food for the Hungry](https://www.fh.org).
