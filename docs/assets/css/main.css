@@ -1218,6 +1218,7 @@ h6 a {
 
 a {
   color: #77a952;
+  font-weight: 600;
   text-decoration: underline;
 }
 
@@ -1874,7 +1875,7 @@ ol.default li {
   input,
   textarea,
   select {
-    font-size: 13pt;
+    font-size: 14pt;
     line-height: 1.75em;
   }
   h2 {
