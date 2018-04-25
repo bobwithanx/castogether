@@ -3,3 +3,7 @@ a.more {
   text-transform: uppercase;
   color: #77a952;
 }
+
+.is-horizontal-center {
+  justify-content: center;
+}
