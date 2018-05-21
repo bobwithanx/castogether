@@ -18,6 +18,6 @@ publishDir = "docs"
     weight = 100
     url = "/about"
 [[menu.main]]
-    name = "Upcoming"
+    name = "Next Event"
     weight = 150
     url = "/events/cast6"
