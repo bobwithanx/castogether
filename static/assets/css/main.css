@@ -5,6 +5,29 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
+.ribbon-red {
+  font: bold 15px Sans-Serif;
+  color: #fff;
+  text-align: center;
+  text-shadow: rgba(255,255,255,0.5) 0px 1px 0px;
+  position: absolute;
+  padding: 7px 0;
+  right: -5px;
+  top: 5px;
+  width: 120px;
+  background-color: #ea181e;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ea181e), to(#b90005));
+  background-image: -webkit-linear-gradient(top, #ea181e, #b90005);
+  background-image: -moz-linear-gradient(top, #BFDC7A, #8EBF45);
+  background-image: -ms-linear-gradient(top, #BFDC7A, #8EBF45);
+  background-image: -o-linear-gradient(top, #BFDC7A, #8EBF45);
+  color: #fff;
+  -webkit-box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
+  box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
+}
+
+
 
 ul.social li a.fa-envelope,
 ul.social li a.fa-envelope-o {
@@ -67,8 +90,8 @@ img {
 }
 
 #banner {
-  margin-top: 2em !important;
-  padding: 2em 0 !important;
+  margin-top: 2em;
+  padding: 2em 0;
 }
 
 #banner header {
@@ -339,6 +362,10 @@ body {
   .container {
     width: 100% !important;
   }
+  .banner {
+    padding: 1em 0;
+  }
+
 }
 
 /* Grid */
@@ -1769,7 +1796,7 @@ ol.default li {
 /* Banner */
 
 #banner {
-  background: #cce8f4 url("../../images/pic01.jpg");
+  background: #cce8f4;
   background-position: center center;
   background-size: auto 100%;
   background-repeat: no-repeat;
@@ -2187,7 +2214,7 @@ ol.default li {
   }
   /* Wrappers */
   #header-wrapper {
-    padding: 3em 0 1.5em 0;
+    padding: 3em 0 0 0;
   }
   #main-wrapper {
     padding: 2.75em 0 2.75em 0;
@@ -2210,8 +2237,8 @@ ol.default li {
   }
   /* Banner */
   #banner {
-    padding: 6em 0;
-    margin: 3em 0 0 0;
+    padding: 2em 0;
+    margin: 1em 0 0 0;
   }
   /* Intro */
   #intro {
@@ -2263,7 +2290,7 @@ ol.default li {
   /* Section/Article */
   section,
   article {
-    margin: 0 0 1.5em 0 !important;
+    margin: 0 0 1.5em 0;
   }
   header {
     margin: 0 0 1em 0;
@@ -2513,8 +2540,8 @@ ol.default li {
   }
   /* Banner */
   #banner {
-    margin: 2em 0 0 0 !important;
-    padding: 6em 0;
+    margin: 1em 0 0 0;
+    padding: 1em 0;
   }
   #banner header {
     padding: 1.5em 1em 1.5em 1em;

@@ -8,21 +8,23 @@ location = "Fuller Theological Seminary – Arizona"
 address = "1110 E Missouri Ave #530, Phoenix, AZ"
 tickets = "https://cast6.brownpapertickets.com"
 author = "Jessica S. Marquis"
+upcoming = true
 draft = false
 +++
 
-Upheaval in our lives.
-Upheaval in society.
-Upheaval in institutions - including the Church.
-Join us for CAST #6: Upheaval on Saturday, 9.15.18.
+Upheaval in our lives.<br>
+Upheaval in society.<br>
+Upheaval in institutions - including the Church.<br>
+Join us for CAST #6: Upheaval on Saturday, 9.15.18.<br>
 
 <!--more-->
 
-Each CAST is 3 hours long:
-1st part - Presentations
-2nd part - Interactive breakout sessions with presenters
+A portion of ticket proceeds was donated to [Kick at Darkness](http://www.kickatdarkness.com).
 
-A portion of ticket proceeds for each CAST is donated to a charity related to the theme. The charity for CAST #6 is [Kick at Darkness](http://www.kickatdarkness.com).
+Each CAST is 3 hours long:
+
+- 1st part - Presentations
+- 2nd part - Interactive breakout sessions with presenters
 
 "He has brought down the powerful from their thrones,
    and lifted up the lowly;

@@ -4,10 +4,12 @@
     <h2>{{ .Site.Params.Event.title }}</h2>
   </header>
   <div class="row" id="flex">
-    {{ range after 1 (where .Data.Pages.Reverse "Type" .Site.Params.Event.foldername) }}
+    {{ range (where .Data.Pages.Reverse "Type" .Site.Params.Event.foldername) }}
     <div class="4u 6u(tablet) 12u(mobile)">
       <section class="box">
-        <a href="{{ .Permalink }}" class="image featured">
+        <a href="{{ .Permalink }}" class="image featured">                  {{ if .Params.Upcoming }}
+          <div class="ribbon-red">Upcoming</div>
+        {{ end }}
           <img src="{{ .Permalink }}/{{ .Params.thumbnail }}" alt="" />
         </a>
         <header>
